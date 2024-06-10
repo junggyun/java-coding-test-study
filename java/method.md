@@ -4,6 +4,8 @@
 
 <details>
 <summary>접기/펼치기</summary>
+  
+<br>
 
 - 접두사 - `startsWith()`
 ```java
@@ -76,6 +78,8 @@ System.out.println(str1.compareTo(str2));
 <details>
 <summary>접기/펼치기</summary>
 
+<br>
+
 - 큰 값 - `Math.max()`
 ```java
 System.out.println(Math.max(10, 5));
@@ -111,6 +115,8 @@ System.out.println(Math.abs(-2));
 
 <details>
 <summary>접기/펼치기</summary>
+
+<br>
 
 - 배열을 리스트로 변환 - `Arrays.asList()`
 ```java
@@ -158,6 +164,8 @@ System.out.println(Arrays.toString(arr));
 
 <details>
 <summary>접기/펼치기</summary>
+
+<br>
 
 - 리스트를 배열로 변환 - `toArray()`
 ```java
