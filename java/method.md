@@ -1,6 +1,10 @@
 # Method
 
 ## String
+
+<details>
+<summary>접기/펼치기</summary>
+
 - 접두사 - `startsWith()`
 ```java
 String str = "Hello";
@@ -63,9 +67,15 @@ System.out.println(str1.compareTo(str2));
 ```
 -1
 ```
+</details>
+
 
 
 ## Math
+
+<details>
+<summary>접기/펼치기</summary>
+
 - 큰 값 - `Math.max()`
 ```java
 System.out.println(Math.max(10, 5));
@@ -94,8 +104,14 @@ System.out.println(Math.abs(-2));
 ```
 2
 ```
+</details>
+
 
 ## Arrays
+
+<details>
+<summary>접기/펼치기</summary>
+
 - 배열을 리스트로 변환 - `Arrays.asList()`
 ```java
 String[] arr = {"A", "B", "C"};
@@ -136,9 +152,13 @@ System.out.println(Arrays.toString(arr));
 ```
 [5, 4, 3, 2, 1]
 ```
-
+</details>
 
 ## List
+
+<details>
+<summary>접기/펼치기</summary>
+
 - 리스트를 배열로 변환 - `toArray()`
 ```java
 List<String> list = new ArrayList<>(Arrays.asList("A", "B", "C"));
@@ -148,3 +168,4 @@ System.out.println(Arrays.toString(arr));
 ```
 [A, B, C]
 ```
+</details>
