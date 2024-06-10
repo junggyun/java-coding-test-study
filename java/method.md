@@ -54,6 +54,15 @@ System.out.println(Arrays.toString(str.split("")));
 ```
 [1, 2, 3, 4, 5]
 ```
+- 사전순으로 비교 - `compareTo()` - 음수가 빠름
+```java
+String str1 = "AB";
+String str2 = "BA";
+System.out.println(str1.compareTo(str2));
+```
+```
+-1
+```
 
 
 ## Math
@@ -104,6 +113,30 @@ System.out.println(Arrays.toString(arr));
 ```
 [A, B, C]
 ```
+- 원시타입을 참조타입으로 변환 `Arrays.stream().boxed().toArray()`
+```java
+int[] arr1 = {1, 3, 5, 2, 4};
+Integer[] arr2 = Arrays.stream(arr1).boxed().toArray(Integer[]::new);
+```
+- 오름차순 정렬 - `Arrays.sort()`
+```java
+int[] arr = {1, 3, 5, 2, 4};
+Arrays.sort(arr);
+System.out.println(Arrays.toString(arr));
+```
+```
+[1, 2, 3, 4, 5]
+```
+- 내림차순 정렬 - `Arrays.sort()` - 래퍼클래스만 가능
+```java
+Integer[] arr = {1, 3, 5, 2, 4};
+Arrays.sort(arr, Collections.reverseOrder());
+System.out.println(Arrays.toString(arr));
+```
+```
+[5, 4, 3, 2, 1]
+```
+
 
 ## List
 - 리스트를 배열로 변환 - `toArray()`
