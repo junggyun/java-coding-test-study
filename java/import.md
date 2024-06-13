@@ -1,10 +1,5 @@
 # Import
 
-## IntStream
-```java
-import java.util.stream.IntStream;
-```
-
 ## Arrays
 ```java
 import java.util.Arrays;
@@ -18,4 +13,14 @@ import java.util.List;
 ## ArrayList
 ```java
 import java.util.ArrayList;
+```
+
+## IntStream
+```java
+import java.util.stream.IntStream;
+```
+
+## Collectors
+```java
+import java.util.stream.Collectors;
 ```

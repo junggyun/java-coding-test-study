@@ -101,6 +101,13 @@ System.out.println(Math.pow(10, 2));
 ```
 100.0
 ```
+- 제곱근 - `Math.sqrt()`
+```java
+System.out.println(Math.sqrt(100));
+```
+```
+10.0
+```
 - 절대값 - `Math.abs()`
 ```java
 System.out.println(Math.abs(-2));
@@ -118,7 +125,7 @@ System.out.println(Math.abs(-2));
 
 <br>
 
-- 배열을 리스트로 변환 - `Arrays.asList()`
+- 배열을 리스트로 변환(String) - `Arrays.asList()`
 ```java
 String[] arr = {"A", "B", "C"};
 List<String> list = Arrays.asList(arr);
@@ -127,6 +134,15 @@ System.out.println(list);
 ```
 [A, B, C]
 ```
+- 배열을 리스트로 변환(int) - `Arrays.asList()`
+```java
+int[] numbers = {1, 2, 3, 4, 5};
+List<Integer> list = Arrays.stream(numbers).boxed().collect(Collectors.toList());
+System.out.println(list.toString());
+```
+```
+[1, 2, 3, 4, 5]
+```
 - 배열값 출력 - `Arrays.toString()`
 ```java
 String[] arr = {"A", "B", "C"};
@@ -134,6 +150,14 @@ System.out.println(Arrays.toString(arr));
 ```
 ```
 [A, B, C]
+```
+- 2차원, 다차원 배열값 출력 `Arrays.deepToString()`
+```java
+int[][] arr = {{2, 3}, {1, 4}};
+System.out.println(Arrays.deepToString(arr));
+```
+```
+[[2, 3], [1, 4]]
 ```
 - 원시타입을 참조타입으로 변환 `Arrays.stream().boxed().toArray()`
 ```java
@@ -149,6 +173,17 @@ System.out.println(Arrays.toString(arr));
 ```
 [1, 2, 3, 4, 5]
 ```
+- 오름차순 정렬(2차원) - `Arrays.sort()` - 람다
+```java
+int[][] arr = {{2, 3}, {1, 4}};
+Arrays.sort(arr, (o1, o2) -> {
+    return o1[0] - o2[0];
+});
+System.out.println(Arrays.deepToString(arr));
+```
+```
+[[1, 4], [2, 3]]
+```
 - 내림차순 정렬 - `Arrays.sort()` - 래퍼클래스만 가능
 ```java
 Integer[] arr = {1, 3, 5, 2, 4};
@@ -157,6 +192,17 @@ System.out.println(Arrays.toString(arr));
 ```
 ```
 [5, 4, 3, 2, 1]
+```
+- 내림차순 정렬(2차원) - `Arrays.sort()` - 람다
+```java
+int[][] arr = {{1, 4}, {2, 3}};
+Arrays.sort(arr, (o1, o2) -> {
+    return o2[0] - o1[0];
+});
+System.out.println(Arrays.deepToString(arr));
+```
+```
+[[2, 3], [1, 4]]
 ```
 </details>
 
@@ -175,5 +221,23 @@ System.out.println(Arrays.toString(arr));
 ```
 ```
 [A, B, C]
+```
+</details>
+
+## StringBuilder
+
+<details>
+<summary>접기/펼치기</summary>
+
+<br>
+
+- 문자열 뒤집기 - `reverse()`
+```java
+StringBuilder sb = new StringBuilder("12345");
+sb.reverse();
+System.out.println(sb.toString());
+```
+```
+54321
 ```
 </details>
