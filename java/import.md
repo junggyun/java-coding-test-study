@@ -15,6 +15,11 @@ import java.util.List;
 import java.util.ArrayList;
 ```
 
+## Set
+```java
+import java.util.Set;
+```
+
 ## IntStream
 ```java
 import java.util.stream.IntStream;

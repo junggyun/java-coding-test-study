@@ -241,3 +241,20 @@ System.out.println(sb.toString());
 54321
 ```
 </details>
+
+## Set
+
+<details>
+<summary>접기/펼치기</summary>
+
+<br>
+
+- 데이터 포함 여부 - `contains()`
+```java
+Set<Integer> set = new HashSet<>(Arrays.asList(1, 2, 3));
+System.out.println(set.contains(2));
+```
+```
+true
+```
+</details>
