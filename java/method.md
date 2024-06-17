@@ -69,6 +69,14 @@ System.out.println(str1.compareTo(str2));
 ```
 -1
 ```
+- 문자열 배열 합치기 - `String.join()`
+```java
+String[] arr = {"A", "B", "C"};
+System.out.println(String.join("", arr));
+```
+```
+ABC
+```
 </details>
 
 
