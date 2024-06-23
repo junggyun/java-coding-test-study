@@ -266,3 +266,23 @@ System.out.println(set.contains(2));
 true
 ```
 </details>
+
+## Character
+
+<details>
+<summary>접기/펼치기</summary>
+
+<br>
+
+- 숫자 판별 - `Character.isDigit()`
+```java
+char a = 'A';
+char b = '1';
+System.out.println(Character.isDigit(a));
+System.out.println(Character.isDigit(b));
+```
+```
+false
+true
+```
+</details>
