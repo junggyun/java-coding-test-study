@@ -285,4 +285,15 @@ System.out.println(Character.isDigit(b));
 false
 true
 ```
+
+## BufferedReader
+
+</details>
+
+<details>
+<summary>접기/펼치기</summary>
+
+<br>
+
+
 </details>
