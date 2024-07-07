@@ -10,3 +10,6 @@
 - 제곱수 -> 홀수
 - 제곱수x -> 짝수
 - `Math.sqrt()` 사용
+
+### 문자열 뒤집기
+- StringBuilder `reverse()` 사용

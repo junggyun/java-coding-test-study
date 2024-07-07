@@ -212,6 +212,16 @@ System.out.println(Arrays.deepToString(arr));
 ```
 [[2, 3], [1, 4]]
 ```
+
+- 배열 복사 - `Arrays.copyOfRange()`
+```java
+int[] array = {1, 2, 3, 4, 5};
+int[] copy = Arrays.copyOfRange(array, 1, 4);
+System.out.println(Arrays.toString(copy));
+```
+```
+[2, 3, 4]
+```
 </details>
 
 ## List
