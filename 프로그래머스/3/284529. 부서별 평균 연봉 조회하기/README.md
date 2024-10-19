@@ -2,6 +2,10 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/284529) 
 
+## 트러블 슈팅
+- GROUP BY 대상을 DEPT_ID로 할 때와 DEPT_NAME_EN으로 할 때의 차이점
+- LEFT JOIN과 JOIN의 차이점
+
 ### 성능 요약
 
 메모리: undefined, 시간: 
