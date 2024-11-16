@@ -1,14 +1,15 @@
 class Solution {
     public int[] solution(int n) {
-        int[] answer;
-        if (n % 2 == 0) {
-            answer = new int[n / 2];
-        } else {
-            answer = new int[n / 2 + 1];
-        }
-        for (int i = 0; i < answer.length; i++) {
-            if (i == 0) answer[i] = 1;
-            else answer[i] = answer[i - 1] + 2;
+        int size = 0;
+        if (n % 2 == 0) size = n / 2;
+        else size = n / 2 + 1;
+        
+        int[] answer = new int[size];
+        
+        int count = 0;
+        for (int i = 1; i <= n; i+=2) {
+            answer[count] = i;
+            count++;
         }
         return answer;
     }
