@@ -1,13 +1,15 @@
 import java.util.*;
-import java.util.stream.Collectors;
+import java.io.*;
 
 public class Main {
-    public static void main(String[] args) {
-        String[] arr = {"a", "b", "c"};
-        List<String> list = Arrays.asList(arr);
-        String tmp = list.get(1);
-        list.set(1, list.get(0));
-        list.set(0, tmp);
-        System.out.println(list.toString());
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static StringTokenizer st;
+    static StringBuilder sb;
+    public static void main(String[] args) throws IOException{
+
     }
+    static void solution() {
+
+    }
+
 }
