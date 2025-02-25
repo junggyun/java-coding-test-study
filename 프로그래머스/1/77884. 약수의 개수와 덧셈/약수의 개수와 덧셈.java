@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Solution {
     public int solution(int left, int right) {
         int answer = 0;
@@ -11,13 +9,13 @@ class Solution {
     }
     
     static int countDivisors(int number) {
-        List<Integer> divisors = new ArrayList<>();
+        int count = 0;
         for (int i = 1; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
-                divisors.add(i);
-                if (i != number / i) divisors.add(number / i);
+                count++;
+                if (i != number / i) count++;
             }
         }
-        return divisors.size();
+        return count;
     }
 }
