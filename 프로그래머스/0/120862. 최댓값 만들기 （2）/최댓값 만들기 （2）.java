@@ -2,14 +2,8 @@ import java.util.*;
 
 class Solution {
     public int solution(int[] numbers) {
-        int answer = Integer.MIN_VALUE;
+        Arrays.sort(numbers);
         
-        for (int i = 0; i < numbers.length - 1; i++) {
-            for (int j = i + 1; j < numbers.length; j++) {
-                answer = Math.max(answer , numbers[i] * numbers[j]);
-            }
-        }
-        
-        return answer;
+        return Math.max(numbers[0] * numbers[1], numbers[numbers.length - 2] * numbers[numbers.length - 1]);
     }
 }
