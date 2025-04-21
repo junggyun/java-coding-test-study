@@ -1,22 +1,20 @@
 import java.util.*;
 
 class Solution {
-    private static int n, m;
-    private static int[] dx, dy;
-    private static int[][] graph;
-    
+    static int[][] graph;
+    static int[] dx, dy;
+    static int n, m;
     public int solution(int[][] maps) {
         graph = maps;
-        n = maps.length;
-        m = maps[0].length;
-        
+        n = graph.length;
+        m = graph[0].length;
         dx = new int[]{0, 0, 1, -1};
-        dy = new int[]{1, -1, 0, 0};     
+        dy = new int[]{1, -1, 0, 0};
         
         return bfs(0, 0);
     }
     
-    private static int bfs(int a, int b) {
+    static int bfs(int a, int b) {
         Queue<int[]> q = new LinkedList<>();
         q.offer(new int[]{a, b});
         
@@ -29,8 +27,7 @@ class Solution {
                 int nx = x + dx[i];
                 int ny = y + dy[i];
                 
-                if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
-                if (graph[nx][ny] == 0) continue;
+                if (nx < 0 || nx >= n || ny < 0 || ny >= m || graph[nx][ny] == 0) continue;
                 if (graph[nx][ny] == 1) {
                     graph[nx][ny] = graph[x][y] + 1;
                     q.offer(new int[]{nx, ny});
