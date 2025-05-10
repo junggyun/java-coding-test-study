@@ -1,4 +1,4 @@
-select b.book_id, a.author_name, date_format(b.published_date, '%Y-%m-%d') as published_date
+select b.book_id, a.author_name, DATE_FORMAT(b.published_date, '%Y-%m-%d') as published_date
 from book as b
 inner join author as a
 on b.author_id = a.author_id
