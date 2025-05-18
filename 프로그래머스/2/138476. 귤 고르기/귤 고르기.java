@@ -3,14 +3,15 @@ import java.util.*;
 class Solution {
     public int solution(int k, int[] tangerine) {
         int answer = 0;
-        int[] count = new int[10000001];
+        Map<Integer, Integer> map = new HashMap<>();
         for (int num : tangerine) {
-            count[num] += 1;
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
-        Arrays.sort(count);
-        for (int i = 10000000; i > 0; i--) {
-            answer += 1;
-            k -= count[i];
+        List<Integer> list = new ArrayList<>(map.keySet());
+        list.sort((o1, o2) -> map.get(o2) - map.get(o1));
+        for (int num : list) {
+            answer++;
+            k -= map.get(num);
             if (k <= 0) break;
         }
         
